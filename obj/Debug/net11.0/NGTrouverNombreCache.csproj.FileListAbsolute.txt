@@ -14,3 +14,4 @@ C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouverNombreCache.pdb
 C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouverNombreCache.genruntimeconfig.cache
 C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\ref\NGTrouverNombreCache.dll
 C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouve.B75AA687.Up2Date
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouverNombreCache.sourcelink.json

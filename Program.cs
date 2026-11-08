@@ -90,70 +90,82 @@ class Program
 
     static void JouerModeDifficile()
     {
-        int min = 0, max = 0;
-
         while (true)
         {
-            AfficherMessage("\nEntrez les bornes min et max de l'intervalle, ou 'Q'-Quitter");
-            string saisie = Console.ReadLine()?.Trim() ?? "";
+            int min = 0, max = 0;
 
-            if (saisie.ToUpper() == "Q")
+            while (true)
             {
-                Console.Clear();
-                AfficherMessage($"Meilleure note du joueur : {meilleureNote}%");
-                return;
-            }
+                AfficherMessage("\nEntrez les bornes min et max de l'intervalle, ou 'Q'-Quitter");
+                string saisie = Console.ReadLine()?.Trim() ?? "";
 
-            string[] parties = saisie.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            if (parties.Length == 2 && int.TryParse(parties[0], out min) && int.TryParse(parties[1], out max))
-            {
-                if (min < max && (max - min > 10))
-                {
-                    break;
-                }
-            }
-            AfficherMessage("Choisissez 2 nombres entiers et (max - min) doit être > à 10");
-        }
-
-        Random rnd = new Random();
-        int nombreCache = rnd.Next(min, max + 1);
-        int nbEssais = 0;
-        int etendue = max - min + 1;
-
-        while (true)
-        {
-            AfficherMessage($"choisissez un nombre entre [{min}, {max}] ou 'Q'-Quitter");
-            string saisie = Console.ReadLine()?.Trim().ToUpper() ?? "";
-
-            if (saisie == "Q")
-            {
-                Console.Clear();
-                return;
-            }
-
-            if (int.TryParse(saisie, out int choixNombre) && choixNombre >= min && choixNombre <= max)
-            {
-                nbEssais++;
-
-                if (choixNombre == nombreCache)
+                if (saisie.ToUpper() == "Q")
                 {
                     Console.Clear();
-                    AfficherMessage("vous avez gagné");
-                    double noteActuelle = ((double)(etendue - nbEssais) / etendue) * 100.0;
-                    if (noteActuelle < 0) noteActuelle = 0;
-                    if (noteActuelle > meilleureNote) meilleureNote = noteActuelle;
-                    AfficherMessage($"Note : {noteActuelle:F2}% | Meilleure note : {meilleureNote:F2}%");
-                    JouerModeDifficile();
+                    AfficherMessage($"Meilleure note du joueur : {meilleureNote}%");
                     return;
+                }
+
+                string[] parties = saisie.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                if (parties.Length == 2 && int.TryParse(parties[0], out min) && int.TryParse(parties[1], out max))
+                {
+                    if (min < max && (max - min > 10))
+                    {
+                        break;
+                    }
+                }
+                AfficherMessage("Choisissez 2 nombres entiers et (max - min) doit être > à 10");
+            }
+
+            Random rnd = new Random();
+            int nombreCache = rnd.Next(min, max + 1);
+            int nbEssais = 0;
+            int etendue = max - min + 1;
+
+            bool changerBornes = false;
+
+            while (true)
+            {
+                AfficherMessage($"choisissez un nombre entre [{min}, {max}] ou 'Q'-Quitter");
+                string saisie = Console.ReadLine()?.Trim().ToUpper() ?? "";
+
+                if (saisie == "Q")
+                {
+                    Console.Clear();
+                    changerBornes = true;
+                    break;
+                }
+
+                if (int.TryParse(saisie, out int choixNombre) && choixNombre >= min && choixNombre <= max)
+                {
+                    nbEssais++;
+
+                    if (choixNombre == nombreCache)
+                    {
+                        Console.Clear();
+                        AfficherMessage("vous avez gagné");
+                        double noteActuelle = ((double)(etendue - nbEssais) / etendue) * 100.0;
+                        if (noteActuelle < 0) noteActuelle = 0;
+                        if (noteActuelle > meilleureNote) meilleureNote = noteActuelle;
+                        AfficherMessage($"Note : {noteActuelle:F2}% | Meilleure note : {meilleureNote:F2}%");
+                        
+                        changerBornes = true;
+                        break;
+                    }
+                    else
+                    {
+                        AfficherMessage("vous avez perdu");
+                    }
                 }
                 else
                 {
-                    AfficherMessage("vous avez perdu");
+                    AfficherMessage("Choix doit être compris entre Min et Max");
                 }
             }
-            else
+
+            if (changerBornes)
             {
-                AfficherMessage("Choix doit être compris entre Min et Max");
+                continue;
             }
         }
     }
