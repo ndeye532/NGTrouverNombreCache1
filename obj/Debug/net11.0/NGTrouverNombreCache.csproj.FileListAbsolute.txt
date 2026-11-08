@@ -1,0 +1,16 @@
+C:\Users\HP\NGTrouverNombreCache\bin\Debug\net11.0\NGTrouverNombreCache.exe
+C:\Users\HP\NGTrouverNombreCache\bin\Debug\net11.0\NGTrouverNombreCache.deps.json
+C:\Users\HP\NGTrouverNombreCache\bin\Debug\net11.0\NGTrouverNombreCache.runtimeconfig.json
+C:\Users\HP\NGTrouverNombreCache\bin\Debug\net11.0\NGTrouverNombreCache.runtimeconfig.dev.json
+C:\Users\HP\NGTrouverNombreCache\bin\Debug\net11.0\NGTrouverNombreCache.dll
+C:\Users\HP\NGTrouverNombreCache\bin\Debug\net11.0\NGTrouverNombreCache.pdb
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouverNombreCache.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouverNombreCache.AssemblyInfoInputs.cache
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouverNombreCache.AssemblyInfo.cs
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouverNombreCache.csproj.CoreCompileInputs.cache
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouverNombreCache.dll
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\refint\NGTrouverNombreCache.dll
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouverNombreCache.pdb
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouverNombreCache.genruntimeconfig.cache
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\ref\NGTrouverNombreCache.dll
+C:\Users\HP\NGTrouverNombreCache\obj\Debug\net11.0\NGTrouve.B75AA687.Up2Date
