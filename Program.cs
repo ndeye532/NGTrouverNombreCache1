@@ -17,7 +17,6 @@ class Program
             if (choix == "Q")
             {
                 Console.Clear();
-                AfficherMessage($"Programme arrêté. Meilleure note globale : {meilleureNote}%");
                 break;
             }
             else if (choix == "F")

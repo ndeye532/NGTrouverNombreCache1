@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NGTrouverNombreCache")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0d08c7bcdd264df5407db6d8561f3ec76494c05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e84d63d0695c6a2ccb1ffe331c773e5587077cd6")]
 [assembly: System.Reflection.AssemblyProductAttribute("NGTrouverNombreCache")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NGTrouverNombreCache")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
